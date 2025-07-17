@@ -58,9 +58,12 @@ body {
 }
 
 @utility masked-img {
-    mask-image: url("/public/images/mask-img.png");
+    mask-image: url("public/images/mask-img.png");
+  
     mask-repeat: no-repeat;
+
     mask-position: center;
+    
     mask-size: 50%;
 }
 
@@ -220,7 +223,7 @@ body {
         }
 
         .top-grid {
-            @apply grid grid-cols-1 xl:grid-cols-12 gap-5 mb-5 md:px-0 px-5;
+            @apply grid grid-cols-1 md:grid-cols-12 gap-5 mb-5 md:px-0 px-5;
 
             > div {
                 @apply rounded-3xl overflow-hidden h-72 relative;
@@ -256,12 +259,12 @@ body {
         }
 
         .cocktail-img {
-            @apply md:w-[60vw] w-full h-[50vh] md:h-[70vh] rounded-4xl overflow-hidden absolute top-0 md:top-1/2 md:-translate-y-1/2 left-1/2 -translate-x-1/2;
+            @apply md:w-[60vw] w-full h-[50vh] md:h-[70vh] rounded-4xl overflow-hidden absolute top-0 md:top-1/2 md:-translate-y-1/2 left-1/2 -translate-x-1/2 mb-10;
         }
 
         .masked-container {
             h2 {
-                @apply text-4xl md:text-5xl font-modern-negra text-center mb-10 text-white mt-32;
+                @apply text-3xl md:text-4xl font-modern-negra text-center mb-10 text-white mt-56;
             }
 
             div {
