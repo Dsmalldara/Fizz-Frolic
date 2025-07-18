@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: "Modern Negra";
-    src: url("public/fonts/Modern Negra Demo.ttf") format("truetype");
+    src: url("/fonts/Modern Negra Demo.ttf") format("truetype");
 }
 
 @theme {
@@ -58,7 +58,7 @@ body {
 }
 
 @utility masked-img {
-    mask-image: url("public/images/mask-img.png");
+    mask-image: url("/images/mask-img.png");
   
     mask-repeat: no-repeat;
 
@@ -93,7 +93,7 @@ body {
     }
 
     .noisy {
-        @apply absolute inset-0 size-full bg-[url("public/images/noise.png")];
+        @apply absolute inset-0 size-full bg-[url("/images/noise.png")];
     }
 
     #hero {
@@ -226,9 +226,12 @@ body {
             @apply grid grid-cols-1 md:grid-cols-12 gap-5 mb-5 md:px-0 px-5;
 
             > div {
-                @apply rounded-3xl overflow-hidden h-72 relative;
+                @apply rounded-3xl  h-72 relative;
+                > img{
+                    @apply rounded-3xl overflow-hidden;
+                }
             }
-
+            
             img {
                 @apply object-cover w-full h-full;
             }

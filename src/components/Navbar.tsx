@@ -1,5 +1,5 @@
 import { navLinks } from "../utils"
-import Logo from '../public/images/logo.png'
+import Logo from '/images/logo.png'
 import { useGSAP} from "@gsap/react"
   import { ScrollTrigger } from "gsap/all"
 import gsap from "gsap"
@@ -31,7 +31,7 @@ function Navbar() {
     <div>
         <a href="#home" className="flex items-center gap-2">
              <img src={Logo} alt="logo"/> 
-            Velvet Pour</a>
+            Fizz Frolic</a>
         <ul>{
             navLinks.map((link)=>(
                 <li key={link.id}>

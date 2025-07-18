@@ -1,6 +1,6 @@
 import { featureLists, goodLists } from "../utils"
-import check from "../public/images/check.png"
-import underImg from "../public/images/under-img.jpg"
+import check from "/images/check.png"
+import underImg from "/images/under-img.jpg"
 import { useMediaQuery } from "react-responsive"
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
@@ -8,7 +8,7 @@ function Art() {
        const isMobile = useMediaQuery({ maxWidth: 767 });
  
  useGSAP(() => {
-	const start = isMobile ? 'top 20%' : 'top top';
+	const start = isMobile ? 'top 20%' : 'top -30%';
 	
 	const maskTimeline = gsap.timeline({
 	 scrollTrigger: {
@@ -61,7 +61,9 @@ function Art() {
 		 <h2 className="will-fade">Sip-Worthy Perfection</h2>
 		 <div id="masked-content" className="" >
 			<h3 >Made with Craft, Poured with Passion</h3>
-			<p>This isn’t just a drink. It’s a carefully crafted moment made just for you.</p>
+			<p>
+				At Fizz Frolic, we believe in the art of cocktail making. Each drink is a masterpiece, crafted with the finest ingredients and a touch of creativity.
+			</p>
 		 </div>
 		</div>
 	 </div>

@@ -1,6 +1,6 @@
 import { useGSAP } from "@gsap/react"
-import cocktailleftleaf from "../public/images/cocktail-left-leaf.png"
-import cocktailrightleaf from "../public/images/cocktail-right-leaf.png"
+import cocktailleftleaf from "/images/cocktail-left-leaf.png"
+import cocktailrightleaf from "/images/cocktail-right-leaf.png"
 import { cocktailLists, mockTailLists } from "../utils"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/all"
@@ -52,7 +52,7 @@ function CocktailDetails() {
             </div>
             <div className="loved">
                 <h2>
-                    Most loved cocktails:
+                    Our mocktails:
                 </h2>
                 <ul>
                     {mockTailLists.map(({name, country, detail, price})=>(

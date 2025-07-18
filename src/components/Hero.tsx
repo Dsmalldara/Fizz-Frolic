@@ -1,6 +1,6 @@
-import leftLeaf from '../public/images/hero-left-leaf.png'
-import rightLeaf from '../public/images/hero-right-leaf.png'
-import input from '../public/videos/input.mp4'
+import leftLeaf from '/images/hero-left-leaf.png'
+import rightLeaf from '/images/hero-right-leaf.png'
+import input from '/videos/input.mp4'
 import { useGSAP } from '@gsap/react'
 import { SplitText } from 'gsap/all'
 import gsap from 'gsap'
@@ -76,12 +76,12 @@ if(videoRef.current) {
                 Cool. Crisp. Classic.
               </p>
               <p className='subtitle'>
-                Sip the Spirit <br /> of Summer
+                Experience the art of cocktail making with our signature drinks crafted to perfection
               </p>
             </div>
             <div className='view-cocktails'>
               <p className='subtitle text-base'>
-                Every cocktail on our menu is a blend of premium ingredients, creative flair, and timeless recipes - designed to delight your senses
+                Discover our signature cocktails, crafted with the finest ingredients and a touch of summer magic.
               </p>
               <a href="#cocktails" className='btn'>View Cocktails</a>
             </div>

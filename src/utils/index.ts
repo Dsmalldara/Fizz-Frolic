@@ -19,102 +19,102 @@ const navLinks = [
 ];
 
 const cocktailLists = [
- {
-	name: "Chapel Hill Shiraz",
-	country: "AU",
-	detail: "Battle",
-	price: "$10",
- },
- {
-	name: "Caten Malbee",
-	country: "AU",
-	detail: "Battle",
-	price: "$49",
- },
- {
-	name: "Rhino Pale Ale",
-	country: "CA",
-	detail: "750 ml",
-	price: "$20",
- },
- {
-	name: "Irish Guinness",
-	country: "IE",
-	detail: "600 ml",
-	price: "$29",
- },
+  {
+    name: "Amber Sunset",
+    country: "NZ",
+    detail: "500 ml",
+    price: "$12",
+  },
+  {
+    name: "Velvet Spice",
+    country: "FR",
+    detail: "Glass",
+    price: "$42",
+  },
+  {
+    name: "Copper Mule",
+    country: "US",
+    detail: "350 ml",
+    price: "$18",
+  },
+  {
+    name: "Midnight Rum",
+    country: "JM",
+    detail: "Shot",
+    price: "$25",
+  },
 ];
 
 const mockTailLists = [
- {
-	name: "Tropical Bloom",
-	country: "US",
-	detail: "Battle",
-	price: "$10",
- },
- {
-	name: "Passionfruit Mint",
-	country: "US",
-	detail: "Battle",
-	price: "$49",
- },
- {
-	name: "Citrus Glow",
-	country: "CA",
-	detail: "750 ml",
-	price: "$20",
- },
- {
-	name: "Lavender Fizz",
-	country: "IE",
-	detail: "600 ml",
-	price: "$29",
- },
+  {
+    name: "Cucumber Drift",
+    country: "US",
+    detail: "Glass",
+    price: "$9",
+  },
+  {
+    name: "Pineapple Calm",
+    country: "MX",
+    detail: "Glass",
+    price: "$39",
+  },
+  {
+    name: "Berry Rain",
+    country: "CA",
+    detail: "750 ml",
+    price: "$21",
+  },
+  {
+    name: "Mint Harmony",
+    country: "IE",
+    detail: "500 ml",
+    price: "$26",
+  },
 ];
 
 const profileLists = [
- {
+  {
 	imgPath: "/images/profile1.png",
  },
- {
+   {
 	imgPath: "/images/profile2.png",
  },
- {
-	imgPath: "/images/profile3.png",
- },
- {
-	imgPath: "/images/profile4.png",
- },
+  {
+    imgPath: "/images/profile3.png",
+  },
+  {
+    imgPath: "/images/profile4.png",
+  },
 ];
 
 const featureLists = [
- "Perfectly balanced blends",
- "Garnished to perfection",
- "Ice-cold every time",
- "Expertly shaken & stirred",
+  "Crafted with fresh botanicals",
+  "Styled with elegance",
+  "Chilled to the core",
+  "Made by certified mixologists",
 ];
 
 const goodLists = [
- "Handpicked ingredients",
- "Signature techniques",
- "Bartending artistry in action",
- "Freshly muddled flavors",
+  "Locally sourced flavors",
+  "Unique house recipes",
+  "Interactive drink experience",
+  "Expert-level preparation",
 ];
 
 const storeInfo = {
- heading: "Where to Find Us",
- address: "456, Raq Blvd. #404, Los Angeles, CA 90210",
- contact: {
-	phone: "(555) 987-6543",
-	email: "hello@jsmcocktail.com",
- },
+  heading: "Visit Our Bar",
+  address: "789 Mix Ave, Suite 101, Brooklyn, NY 11201",
+  contact: {
+    phone: "(212) 555-7654",
+    email: "cheers@craftedtails.com",
+  },
 };
 
 const openingHours = [
- { day: "Mon–Thu", time: "11:00am – 12am" },
- { day: "Fri", time: "11:00am – 2am" },
- { day: "Sat", time: "9:00am – 2am" },
- { day: "Sun", time: "9:00am – 1am" },
+  { day: "Mon–Thu", time: "12:00pm – 11pm" },
+  { day: "Fri", time: "12:00pm – 1am" },
+  { day: "Sat", time: "10:00am – 1am" },
+  { day: "Sun", time: "10:00am – 11pm" },
 ];
 
 const socials = [
@@ -123,7 +123,7 @@ const socials = [
 	icon: "/images/insta.png",
 	url: "#",
  },
- {
+{
 	name: "X (Twitter)",
 	icon: "/images/x.png",
 	url: "#",
@@ -136,49 +136,49 @@ const socials = [
 ];
 
 const sliderLists = [
- {
-	id: 1,
-	name: "Classic Mojito",
-	image: "/images/drink1.png",
-	title: "Simple Ingredients, Bold Flavor",
-	description:
-	 "Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect drink on summer nights.",
- },
- {
-	id: 2,
-	name: "Raspberry Mojito",
-	image: "/images/drink2.png",
-	title: "A Zesty Classic That Never Fails",
-	description:
-	 "The Margarita is a classic that balances tangy lime, smooth tequila, and a touch of sweetness. Shaken, frozen, or on the rocks—it’s always crisp & refreshing.",
- },
- {
-	id: 3,
-	name: "Violet Breeze",
-	image: "/images/drink3.png",
-	title: "Simple Ingredients, Bold Flavor",
-	description:
-	 "Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect drink on summer nights.",
- },
- {
-	id: 4,
-	name: "Curacao Mojito",
-	image: "/images/drink4.png",
-	title: "Crafted With Care, Poured With Love",
-	description:
-	 "Each cocktail is made with fresh ingredients and a passion for perfecting every pour, whether you're celebrating or simply relaxing.",
- },
+  {
+    id: 1,
+    name: "Sunset Daiquiri",
+   	image: "/images/drink1.png",
+    title: "Bright Tones, Smooth Finish",
+    description:
+      "A stunning mix of rum, citrus, and a hint of bitters—perfect for winding down under warm lights and cool vibes.",
+  },
+  {
+    id: 2,
+    name: "Blackberry Twist",
+    	image: "/images/drink2.png",
+    title: "A Bold Take on the Familiar",
+    description:
+      "Fruity and bold with layers of blackberry and basil, this cocktail delivers refreshment with a modern twist.",
+  },
+  {
+    id: 3,
+    name: "Rosewater Mule",
+   	image: "/images/drink3.png",
+    title: "Elegant, Light, and Floral",
+    description:
+      "Combining ginger beer, rosewater, and lime—this floral mule offers a refreshing break from the ordinary.",
+  },
+  {
+    id: 4,
+    name: "Ocean Breeze",
+    	image: "/images/drink4.png",
+    title: "Handcrafted With Passion",
+    description:
+      "This tropical blue blend is layered with coconut, pineapple, and mint—crafted to elevate your beachside moments.",
+  },
 ];
 
 export {
- navLinks,
- cocktailLists,
- mockTailLists,
- profileLists,
- featureLists,
- goodLists,
- openingHours,
- storeInfo,
- socials,
- sliderLists,
+  navLinks,
+  cocktailLists,
+  mockTailLists,
+  profileLists,
+  featureLists,
+  goodLists,
+  openingHours,
+  storeInfo,
+  socials,
+  sliderLists,
 };
