@@ -108,8 +108,6 @@ if(videoRef.current) {
 		<video
 		 ref={videoRef}
 		 muted
-     autoPlay
-     loop
 		 playsInline
 		 preload="auto"
 		 src={input}
