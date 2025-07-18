@@ -14,7 +14,8 @@ function Hero() {
   const isMobile = useMediaQuery({maxWidth:767})
 
   useEffect(() => {
-  const playVideo = () => videoRef.current?.play(); // This function plays the video
+ if(isMobile){
+   const playVideo = () => videoRef.current?.play(); // This function plays the video
   
   // These lines automatically set up the listeners
   document.addEventListener('touchstart', playVideo, {once: true});
@@ -25,6 +26,7 @@ function Hero() {
     document.removeEventListener('touchstart', playVideo);
     document.removeEventListener('click', playVideo);
   };
+ }
 }, []);
   useGSAP(()=>{
     gsap.registerPlugin(ScrollTrigger)
