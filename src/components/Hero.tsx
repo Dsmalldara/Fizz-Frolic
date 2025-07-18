@@ -4,7 +4,7 @@ import input from '/videos/input.mp4'
 import { useGSAP } from '@gsap/react'
 import { SplitText } from 'gsap/all'
 import gsap from 'gsap'
-import { useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import { useMediaQuery } from "react-responsive";
 import { ScrollTrigger } from "gsap/all"
 
@@ -13,6 +13,19 @@ function Hero() {
   const videoRef = useRef<HTMLVideoElement>(null)
   const isMobile = useMediaQuery({maxWidth:767})
 
+  useEffect(() => {
+  const playVideo = () => videoRef.current?.play(); // This function plays the video
+  
+  // These lines automatically set up the listeners
+  document.addEventListener('touchstart', playVideo, {once: true});
+  document.addEventListener('click', playVideo, {once: true});
+  
+  // Cleanup when component unmounts
+  return () => {
+    document.removeEventListener('touchstart', playVideo);
+    document.removeEventListener('click', playVideo);
+  };
+}, []);
   useGSAP(()=>{
     gsap.registerPlugin(ScrollTrigger)
     const heroSplit= new SplitText('.title',{type: 'chars, words'}) 
@@ -93,6 +106,8 @@ if(videoRef.current) {
 		<video
 		 ref={videoRef}
 		 muted
+     autoPlay
+     loop
 		 playsInline
 		 preload="auto"
 		 src={input}
