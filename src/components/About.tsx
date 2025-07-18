@@ -63,7 +63,7 @@ function About() {
          <div className="top-grid">
             <div className="md:col-span-3" >
             <div className="noisy"/>
-            <img src={Abt1} alt="grid-img-1"  className="relative" />
+            <img src={Abt1} alt="grid-img-1"  className="" />
            
             </div>
              <div className="md:col-span-6">
