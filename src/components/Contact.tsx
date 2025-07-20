@@ -56,9 +56,9 @@ function Contact() {
                 <h3>Socials</h3>
                 <div className='flex-center gap-5'>
                     {socials.map((social)=>(
-                        <a href="" key={social.name} target='_blank' rel='noopener noreferrer' aria-label={social.name}>
+                        <p >
                             <img  src={social.icon} alt={social.name}/>
-                        </a>
+                        </p>
                     ))}
                 </div>
             </div>
